@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Mehdi Moujahed Restaurant</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/prettyPhoto.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/datePicker.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="site-logo">
+          <a href="index.html" class="brand">Restaurant Mehdi Moujahed</a>
+        </div>
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="reservation.html">Reservation </a></li>
+          
+          </ul>
+        </div>
+        <!-- /.Navbar-collapse -->
+      </div>
+    </div>
+  </nav>
+
+  
+
+
+
+  <div class="container">
+    <!--form -->
+    <form>
+
+      <div class="card person-card">
+        <div class="card-body">
+
+          <h2 id="who_message" class="card-title">vos informations :</h2>
+          <!-- check box -->
+<div class="wrapper">
+    <h2>Civilite : </h2>
+  <div class="toggle_radio">
+    <input type="radio" class="toggle_option" id="first_toggle" name="toggle_option"   value="mme"><label for="first_toggle"><p>Mme</p></label>
+    <input type="radio" checked class="toggle_option" id="second_toggle" name="toggle_option"   value="mlle"><label for="second_toggle"><p>Mlle</p></label>
+    <input type="radio" class="toggle_option" id="third_toggle" name="toggle_option"   value="m"><label for="third_toggle"><p>Mr</p></label>    
+    <div class="toggle_option_slider">
+    </div>
+  </div>
+<h2>Nom et Prenom </h2>
+<br />
+            <!-- First name  -->
+            <div class="form-group col-md-5">
+              <input  type="text" class="form-control is-valid" id="nom" placeholder="Nom et Prenom" >
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="card person-card">
+        <div class="card-body">
+
+          <h2 id="who_message" class="card-title">Vos informations :</h2>
+          <!-- check box -->
+          <div class="row">
+   <!--date-->
+   <div class="form-group">
+    <label class="col-form-label">Date : </label>
+    <input name="date" type="text" id="date" class="form-control" />
+  </div>
+   <!-- Phone number -->
+   <div class="form-group">
+    <label for="tel" class="col-form-label">Numero Tel :</label>
+    <input type="text" class="form-control" id="tel" placeholder=" " required>
+  </div>
+  <label class="col-form-label">table pour :  </label> <br>
+  <div class="form-group col-md-2">
+    <select name="nbp" id="nbp" class="form-control">
+      <option value="-1">--Choisir---</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="4">4</option>
+      <option value="6">6</option>
+    </select>
+    <div id="chaises">
+      <img src="images/chaise.jpg">
+    </div>
+          </div>
+         
+        </div>
+        <div id="div_accompagnateurs" class="col-form-label">
+          <label >Liste des accompagnateurs   </label> <br>
+         
+            <br />
+            <textarea name="accompagnateurs" class="form-control is-valid" cols="60" rows="4" id="accompagnateurs"></textarea>
+            <br />
+          </div>
+      </div>
+
+      <h2>Que voulez-vous manger ?  </h2>
+      <div class="container">
+        <div class="row">
+        <div class="boxes">
+        <input type="checkbox" name="cmd" value="Salade" data-prix="5" id="box-1">
+        <label for="box-1">Salade</label>
+      
+        <input name="cmd" type="checkbox" value="Soupe" data-prix="2.5" id="box-2">
+        <label for="box-2">Soupe </label>
+      
+        <input name="cmd" type="checkbox" value="Couscous" data-prix="15.5" id="box-3">
+        <label for="box-3">Couscous</label>
+        <input type="checkbox" name="cmd" value="Riz" data-prix="12" id="box-4">
+        <label for="box-4">Riz</label>
+      
+        <input name="cmd" type="checkbox" value="Fruits" data-prix="7" id="box-5">
+        <label for="box-5">Fruits </label>
+      
+        <input name="cmd" type="checkbox" value="Gateaux" data-prix="6.4" id="box-6">
+        <label for="box-6">Gateaux</label>
+      </div>
+      
+      
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+    <div style="margin-top: 1em;">
+        <button type="button" class="btn btn-primary btn-lg btn-block" name="b1" id="b1"><h4> Valider</h4></button>
+      </div>
+      <div id="div_resume" style='text-align: center'>
+      </div>
+      <p>&nbsp;</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <footer id="footer" class="midnight-blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="text-center">
+            <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+          </div>
+          &copy; Mehdi Moujahed All Rights Reserved.
+
+        </div>
+
+     
+      </div>
+    </div>
+  </footer>
+  <!--/#footer-->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/JqueryReservation.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="contactform/contactform.js"></script>
+  <script src="js/datePicker.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
